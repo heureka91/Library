@@ -1,0 +1,5 @@
+org\example\LibraryGUI.class
+org\example\Main.class
+org\example\BookService.class
+org\example\DatabaseManager.class
+org\example\Book.class
