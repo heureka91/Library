@@ -18,7 +18,7 @@ public class Book {
         this.available = available;
     }
 
-    // Getterek és Setterek
+
     public int getId() {
         return id;
     }
