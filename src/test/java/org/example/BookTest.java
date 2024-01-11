@@ -1,48 +1,43 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BookTest {
+class BookTest {
 
     @Test
-    public void testBookGettersAndSetters() {
-        // Arrange
+    void testDefaultConstructor() {
         Book book = new Book();
-        book.setId(1);
-        book.setTitle("Test Title");
-        book.setAuthor("Test Author");
-        book.setAvailable(true);
+        assertNotNull(book, "A book objektumnak nem szabad null-nak lennie");
+    }
 
-        // Assert
+    @Test
+    void testParameterizedConstructor() {
+        Book book = new Book(1, "A próféta", "Khalil Gibran", true);
         assertEquals(1, book.getId());
-        assertEquals("Test Title", book.getTitle());
-        assertEquals("Test Author", book.getAuthor());
+        assertEquals("A próféta", book.getTitle());
+        assertEquals("Khalil Gibran", book.getAuthor());
         assertTrue(book.isAvailable());
     }
 
     @Test
-    public void testBookConstructor() {
-        // Arrange and Act
-        Book book = new Book(1, "Test Title", "Test Author", true);
+    void testSettersAndGetters() {
+        Book book = new Book();
+        book.setId(2);
+        book.setTitle("Az ötödik hegy");
+        book.setAuthor("Paulo Coelho");
+        book.setAvailable(false);
 
-        // Assert
-        assertEquals(1, book.getId());
-        assertEquals("Test Title", book.getTitle());
-        assertEquals("Test Author", book.getAuthor());
-        assertTrue(book.isAvailable());
+        assertEquals(2, book.getId());
+        assertEquals("Az ötödik hegy", book.getTitle());
+        assertEquals("Paulo Coelho", book.getAuthor());
+        assertFalse(book.isAvailable());
     }
 
     @Test
-    public void testToString() {
-        // Arrange
-        Book book = new Book(1, "Test Title", "Test Author", true);
-
-        // Act
-        String result = book.toString();
-
-        // Assert
-        assertEquals("Book{id=1, cím='Test Title', író='Test Author', elérhető=true}", result);
+    void testToString() {
+        Book book = new Book(3, "Az Alkimista", "Paulo Coelho", true);
+        String expectedString = "Book{id=3, cím='Az Alkimista', író='Paulo Coelho', elérhető=true}";
+        assertEquals(expectedString, book.toString());
     }
 }

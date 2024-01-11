@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: org.example.BookTest
+Test set: org.example.BorrowRecordTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 s -- in org.example.BookTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.070 s -- in org.example.BorrowRecordTest

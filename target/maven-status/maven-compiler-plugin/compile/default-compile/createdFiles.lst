@@ -1,5 +1,6 @@
 org\example\LibraryGUI.class
-org\example\Main.class
-org\example\BookService.class
+org\example\BorrowRecord.class
+org\example\Application.class
 org\example\DatabaseManager.class
+org\example\LibraryActions.class
 org\example\Book.class

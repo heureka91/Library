@@ -223,11 +223,11 @@ public class LibraryActions {
     public void openBorrowHistoryDialog() {
         JDialog borrowHistoryDialog = new JDialog(parent, "Borrow History", true);
         borrowHistoryDialog.setLayout(new BorderLayout());
-        borrowHistoryDialog.setSize(600, 400); // Ablak méretét növeltem a könyv nevének helyett biztosításához
+        borrowHistoryDialog.setSize(600, 400);
 
         DefaultTableModel model = new DefaultTableModel();
         model.addColumn("Book ID");
-        model.addColumn("Book Title"); // Könyv nevének oszlopa hozzáadva
+        model.addColumn("Book Title");
         model.addColumn("Borrower Name");
         model.addColumn("Borrow Date");
         model.addColumn("Return Date");
