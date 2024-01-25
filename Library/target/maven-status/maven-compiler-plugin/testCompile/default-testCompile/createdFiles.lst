@@ -1,0 +1,6 @@
+org\example\DatabaseManagerTest.class
+org\example\BookControllerTest.class
+org\example\BorrowRecordTest.class
+org\example\WebDriver.class
+org\example\TestConfig.class
+org\example\BookTest.class

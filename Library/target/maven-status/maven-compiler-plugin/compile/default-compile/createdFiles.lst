@@ -1,0 +1,8 @@
+org\example\Application.class
+org\example\LibraryGUI.class
+org\example\BookController.class
+org\example\BorrowRecord.class
+org\example\DatabaseManager.class
+org\example\LibraryActions.class
+org\example\Book.class
+org\example\IDatabaseManager.class
